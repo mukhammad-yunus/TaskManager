@@ -44,6 +44,29 @@ public class Task {
     }
   }
 
+  public void markAsDone(){
+    this.isDone = true;
+  }
+
+  public int getId(){
+    return id;
+  }
+  public String getDescription(){
+    return description;
+  }
+  public Priority getPriority(){
+    return priority;
+  }
+  public Category getCategory(){
+    return category;
+  }
+  public LocalDate getDueDate(){
+    return dueDate;
+  }
+  public boolean isDone(){
+    return isDone;
+  }
+
   @Override
   public String toString() {
     String dueDateStr = (dueDate != null) ? dueDate.toString() : "No due date";
